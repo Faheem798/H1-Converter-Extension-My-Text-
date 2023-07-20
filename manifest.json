@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "H1 Converter Extension",
+  "version": "1.0",
+  "description": "Converts all h1 elements on a webpage into 'My Text'",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
